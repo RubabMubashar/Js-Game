@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hangman Game</h1>
+    <div id="game">
+      <div id="word-display">
+        <!-- Word progress will be displayed here -->
+      </div>
+      <div id="wrong-letters">
+        <p>Wrong Letters:</p>
+        <span id="wrong-letters-list"></span>
+      </div>
+      <canvas id="hangman-canvas"></canvas>
+      <div id="keyboard">
+        <!-- Keyboard buttons will be generated dynamically -->
+      </div>
+    </div>
+    <div id="popup" class="hidden">
+      <p id="message"></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
